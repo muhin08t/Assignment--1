@@ -100,12 +100,13 @@ input[type=number] {
 .input-area input[type=button] {
   color: white;
   background-color: #333333;
-  border: 1px solid whitesmoke;
+  border: 1px solid #555;
   border-radius: 5px;
   padding: 10px 30px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
+
 .input-area input[type=button]#cut-btn {
   background-color: #f0ad4e;
 }
@@ -130,7 +131,7 @@ input[type=number] {
   padding-top: 3px;
   background-color: #5cb85c;
 }
-.result-area h2 {
+.result-area h3 {
   margin-left: 15px;
   color: #fff;
   background-color: #007bff;

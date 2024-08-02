@@ -11,8 +11,8 @@
 <div class="grid-container">
   <div class="grid-item">
     <div class="generate-key-area">
-        <button class="generate-key-btn">Generate secred key</button>
-        <button class="display-key-btn ">654987</button>
+        <button id="btn_generate_key" class="generate-key-btn" onclick="generateSecretKey()">Generate secret key</button>
+        <button id="btn_display_key" class="display-key-btn" disabled>111111</button>
      </div>
   </div>
   <div class="grid-item">
@@ -22,28 +22,29 @@
         <input type="number" id="pin" maxlength="6">
          </div>
       <div class="input-area">
-        <input type="button" value="1">
-        <input type="button" value="1">
-        <input type="button" value="1">
-        <input type="button" value="1">
-        <input type="button" value="1">
-        <input type="button" value="1">
-        <input type="button" value="1">
-        <input type="button" value="1">
-        <input type="button" value="1">
-        <input type="button" value="1">
+        <input type="button" value="1" onclick="processInput(this.value)">
+        <input type="button" value="2" onclick="processInput(this.value)">
+        <input type="button" value="3" onclick="processInput(this.value)">
+        <input type="button" value="4" onclick="processInput(this.value)">
+        <input type="button" value="5" onclick="processInput(this.value)">
+        <input type="button" value="6" onclick="processInput(this.value)">
+        <input type="button" value="7" onclick="processInput(this.value)">
+        <input type="button" value="8" onclick="processInput(this.value)">
+        <input type="button" value="9" onclick="processInput(this.value)">
+        <input type="button" value="0" onclick="processInput(this.value)">
         <input type="button" value="X" id="cut-btn">
-        <input type="button" value="Submit" id="submit-btn">
+        <input type="button" value="Submit" id="submit-btn" onclick="displayResult()">
         <input type="button" value="Clear" id="reset-btn">
       </div>
       <!-- result area start  -->
       <div class="result-area">
         <i class="bi bi-check-lg"></i>
-        <h2>Your secret key is matched !</h2>
+        <h3>Your secret key is matched !</h3>
       </div>
       <!-- result area end  -->
     </div>
   </div>
 </div>
+<script src="main.js"></script>
 </body>
 </html>
