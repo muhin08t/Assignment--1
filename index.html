@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Key Matcher</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +17,31 @@
   </div>
   <div class="grid-item">
     <div class="validate-key-area">
-
+      <div class="pin-area">
+        <h1>Enter PIN:</h1>
+        <input type="number" id="pin" maxlength="6">
+         </div>
+      <div class="input-area">
+        <input type="button" value="1">
+        <input type="button" value="1">
+        <input type="button" value="1">
+        <input type="button" value="1">
+        <input type="button" value="1">
+        <input type="button" value="1">
+        <input type="button" value="1">
+        <input type="button" value="1">
+        <input type="button" value="1">
+        <input type="button" value="1">
+        <input type="button" value="X" id="cut-btn">
+        <input type="button" value="Submit" id="submit-btn">
+        <input type="button" value="Clear" id="reset-btn">
+      </div>
+      <!-- result area start  -->
+      <div class="result-area">
+        <i class="bi bi-check-lg"></i>
+        <h2>Your secret key is matched !</h2>
+      </div>
+      <!-- result area end  -->
     </div>
   </div>
 </div>
