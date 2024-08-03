@@ -21,6 +21,9 @@ function displayResult() {
 }
 function processInput(val){
     let x = document.getElementById("pin").value;
+    if(pinValue && pinValue.length>=6){
+        return;
+    }
     if(pinValue){
         pinValue = pinValue+val;
     } else {

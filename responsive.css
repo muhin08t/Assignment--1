@@ -1,3 +1,16 @@
+
+ /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .input-area input[type=button] {
+        padding: 7px 20px;
+        font-size: 16px;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+  }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .grid-container {
@@ -53,7 +66,7 @@
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+  /* @media only screen and (min-width: 600px) {
 
     .grid-container {
         display: grid;
@@ -106,7 +119,7 @@
         font-size: 16px;
     }
   }
-  
+   */
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
     .pin-area h3 {
@@ -128,15 +141,4 @@
     }
   } 
   
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .input-area input[type=button] {
-        padding: 7px 20px;
-        font-size: 16px;
-    }
-  } 
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
-  }
+ 
