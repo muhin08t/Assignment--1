@@ -65,9 +65,10 @@ body {
     height: 80px;
     align-items: baseline;
   }
-  .pin-area h1 {
+  .pin-area h3 {
     color: white;
     margin-right: 20px;
+    font-size: 35px;
   }
   .pin-area input {
     border: 2px solid #fff;
