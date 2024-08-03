@@ -1,21 +1,9 @@
 
- /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .input-area input[type=button] {
-        padding: 7px 20px;
-        font-size: 16px;
-    }
-  } 
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
-  }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 699px) {
     .grid-container {
         display: grid;
-        grid-template-rows: 30% 70%;
+        grid-template-rows: auto auto;
         grid-template-columns: 1fr;
         gap: 1px;
         background-color: #fff;
@@ -27,20 +15,23 @@
         flex-direction: column;
         align-items: center;
         justify-content: start;
+        height: 200px;
       }
 
       .validate-key-area {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: start;
-        height: 100%;
+        justify-content: center;
+        height: 600px;
       }
 
     .pin-area {
         display: flex;
         justify-content: start;
         flex-direction: column;
+        align-items: start;
+        height: 40px;
       }
     .pin-area h3 {
         margin-right: 10px;
@@ -55,7 +46,7 @@
         margin-bottom: 10px;
       }
     .input-area {
-        margin-top: 20px;
+        margin-top: 120px;
         grid-template-columns: 50% 50%;
         gap: 10px;
       }
@@ -64,64 +55,8 @@
         font-size: 16px;
     }
   }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  /* @media only screen and (min-width: 600px) {
-
-    .grid-container {
-        display: grid;
-        grid-template-rows: 30% 70%;
-        grid-template-columns: 1fr;
-        gap: 1px;
-        background-color: #fff;
-        padding: 0px;
-      }
-
-      .generate-key-area {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-      }
-
-      .validate-key-area {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        height: 100%;
-      }
-
-    .pin-area {
-        display: flex;
-        justify-content: start;
-        flex-direction: column;
-      }
-    .pin-area h3 {
-        margin-right: 10px;
-        font-size: 25px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-        margin-top: 10px;
-      }
-      .pin-area input {
-        padding: 17px 0;
-        width: 170px;
-        margin-bottom: 10px;
-      }
-    .input-area {
-        margin-top: 20px;
-        grid-template-columns: 50% 50%;
-        gap: 10px;
-      }
-      .input-area input[type=button] {
-        padding: 7px 20px;
-        font-size: 16px;
-    }
-  }
-   */
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 700px) {
     .pin-area h3 {
         margin-right: 20px;
         font-size: 25px;
@@ -141,4 +76,15 @@
     }
   } 
   
- 
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .input-area input[type=button] {
+        padding: 7px 20px;
+        font-size: 16px;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+   
+  }

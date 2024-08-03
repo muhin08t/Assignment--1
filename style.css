@@ -9,10 +9,11 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: calc(100vh - 60px);
     gap: 1px;
     background-color: #fff;
     padding: 0px;
-    height: calc(100vh - 60px);
+    /* height: calc(100vh - 60px); */
   }
   
   .grid-item {
