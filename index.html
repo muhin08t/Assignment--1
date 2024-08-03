@@ -12,7 +12,7 @@
   <div class="grid-item">
     <div class="generate-key-area">
         <button id="btn_generate_key" class="generate-key-btn" onclick="generateSecretKey()">Generate secret key</button>
-        <button id="btn_display_key" class="display-key-btn" disabled>111111</button>
+        <button id="btn_display_key" class="display-key-btn" disabled></button>
      </div>
   </div>
   <div class="grid-item">
@@ -38,8 +38,14 @@
       </div>
       <!-- result area start  -->
       <div class="result-area">
-        <i class="bi bi-check-lg"></i>
-        <h3>Your secret key is matched !</h3>
+        <div class="result-msg" id="success-msg" style="visibility: hidden;">
+          <i class="icon-success bi bi-check-lg"></i>
+          <h3 class="success-title">Your secret key is matched !</h3>
+        </div>
+        <div class="result-msg" id="wrong-msg" style="visibility: hidden;">
+          <i class="icon-wrong bi bi-file-earmark-excel"></i>
+          <h3 class="wrong-title">Your secret key is not matched !</h3>  
+        </div>
       </div>
       <!-- result area end  -->
     </div>

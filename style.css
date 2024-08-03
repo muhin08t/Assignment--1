@@ -45,7 +45,8 @@ body {
     width: 150px;
     border-radius: 5px;
     color: white;
-    padding: 12px 25px;
+    padding: 5px;
+    height: 55px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
@@ -122,8 +123,12 @@ input[type=number] {
 .result-area {
   margin-top: 20px;
   display: flex;
+  flex-direction: column;
 }
-.result-area i {
+.result-msg {
+  display: flex;
+}
+.result-msg i {
   color: white;
   width: 25px;
   height: 25px;
@@ -131,8 +136,21 @@ input[type=number] {
   padding-top: 3px;
   background-color: #5cb85c;
 }
-.result-area h3 {
+.result-msg i.icon-success {
+  color: white;
+  background-color: #5cb85c;
+}
+.result-msg i.icon-wrong {
+  color: white;
+  background-color: red;
+}
+.result-msg .success-title {
   margin-left: 15px;
   color: #fff;
   background-color: #007bff;
+}
+.result-msg .wrong-title {
+  margin-left: 15px;
+  color: #fff;
+  background-color: red;
 }
