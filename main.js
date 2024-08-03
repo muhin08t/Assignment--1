@@ -24,3 +24,18 @@ function processInput(val){
      console.log(totalValue);
      document.getElementById("pin").value = totalValue;
 }
+
+function resetInput() {
+    document.getElementById("pin").value = "";
+    totalValue = "";
+}
+
+function deleteSingleInput() {
+    totalValue = document.getElementById("pin").value;
+    if(totalValue) {
+        totalValue.toString();
+        let x = totalValue.slice(0,-1);
+        totalValue = x;
+        document.getElementById("pin").value = totalValue;
+    }
+}

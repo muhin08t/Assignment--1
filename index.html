@@ -32,9 +32,9 @@
         <input type="button" value="8" onclick="processInput(this.value)">
         <input type="button" value="9" onclick="processInput(this.value)">
         <input type="button" value="0" onclick="processInput(this.value)">
-        <input type="button" value="X" id="cut-btn">
+        <input type="button" value="X" id="cut-btn" onclick="deleteSingleInput()">
         <input type="button" value="Submit" id="submit-btn" onclick="displayResult()">
-        <input type="button" value="Clear" id="reset-btn">
+        <input type="button" value="Clear" id="reset-btn" onclick="resetInput()">
       </div>
       <!-- result area start  -->
       <div class="result-area">
